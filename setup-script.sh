@@ -24,6 +24,21 @@ cd glslang
 mkdir -p build
 cd build
 cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$(pwd)/install" ..
-sudo make -j4 install
+make -j4 install
 cd ../..
 rm -rf glslang
+
+echo "Set up TADS"
+
+git clone https://github.com/realnc/frobtads.git frobtads
+cd frobtads
+mkdir build
+cd build
+cmake ..
+cmake --build . --target install
+cd ../..
+rm -rf frobtads
+
+echo "Set up TypeScript"
+npm install -g prettier
+npm install -g eslint
