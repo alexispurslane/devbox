@@ -1,15 +1,20 @@
-FROM quay.io/toolbx-images/alpine-toolbox:edge
+FROM dockerhub.io/opensuse/tumbleweed:latest
 
 LABEL com.github.containers.toolbox="true" \
       usage="This image is meant to be used with the toolbox or distrobox command" \
-      summary="A cloud-native terminal experience" \
+      summary="Alexis' Tumbleweed development environment" \
       maintainer="jorge.castro@gmail.com"
 
 COPY extra-packages /
-RUN apk update && \
-    apk upgrade && \
-    grep -v '^#' /extra-packages | xargs apk add
-RUN rm /extra-packages
+COPY extra-patterns /
+RUN zypper dup && \
+    grep -v '^#' /extra-packages | xargs zypper in -y && \
+    grep -v '^#' /extra-patterns | xargs zypper in -y -t pattern
+RUN rm /extra-packages /extra-patterns
+
+COPY setup-script.sh /
+RUN sh setup-script.sh
+RUN rm setup-script.sh
 
 RUN   ln -fs /bin/sh /usr/bin/sh && \
       ln -fs /usr/bin/distrobox-host-exec /usr/local/bin/docker && \
@@ -17,4 +22,5 @@ RUN   ln -fs /bin/sh /usr/bin/sh && \
       ln -fs /usr/bin/distrobox-host-exec /usr/local/bin/podman && \
       ln -fs /usr/bin/distrobox-host-exec /usr/local/bin/rpm-ostree && \
       ln -fs /usr/bin/distrobox-host-exec /usr/local/bin/transactional-update
-     
+
+SHELL ["/usr/bin/fish", "-c"]
