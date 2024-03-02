@@ -15,3 +15,15 @@ rustup component add rust-analyzer
 echo "Set up Ocaml toolchain"
 opam init
 opam install ocaml-lsp-server odoc ocamlformat utop
+
+echo "Set up glslang"
+
+git clone https://github.com/KhronosGroup/glslang.git
+cd glslang
+./update_glslang_sources.py
+mkdir -p build
+cd build
+cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$(pwd)/install" ..
+sudo make -j4 install
+cd ../..
+rm -rf glslang
