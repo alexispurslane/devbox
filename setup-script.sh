@@ -15,11 +15,3 @@ rustup component add rust-analyzer
 echo "Set up Ocaml toolchain"
 opam init
 opam install ocaml-lsp-server odoc ocamlformat utop
-
-echo "Get dotfiles and set them up"
-git clone https://github.com/alexispurslane/dotfiles
-stow dotfiles/emacs dotfiles/fish dotfiles/vim
-
-echo "Set up DOOM emacs"
-git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.emacs.d
-~/.emacs.d/bin/doom install
