@@ -16,6 +16,10 @@ echo "Set up Ocaml toolchain"
 opam init
 opam install ocaml-lsp-server odoc ocamlformat utop
 
+echo "Set up TypeScript"
+npm install -g prettier
+npm install -g eslint
+
 echo "Set up glslang"
 
 git clone https://github.com/KhronosGroup/glslang.git
@@ -28,17 +32,13 @@ make -j4 install
 cd ../..
 rm -rf glslang
 
-echo "Set up TADS"
+#echo "Set up TADS"
 
-git clone https://github.com/realnc/frobtads.git frobtads
-cd frobtads
-mkdir build
-cd build
-cmake ..
-cmake --build . --target install
-cd ../..
-rm -rf frobtads
-
-echo "Set up TypeScript"
-npm install -g prettier
-npm install -g eslint
+#git clone https://github.com/realnc/frobtads.git frobtads
+#cd frobtads
+#mkdir build
+#cd build
+#cmake ..
+#cmake --build . --target install
+#cd ../..
+#rm -rf frobtads
