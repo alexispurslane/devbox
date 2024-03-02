@@ -5,7 +5,7 @@ pip install --break-system-packages tensorflow[and-cuda] spacy[cuda-12x] pyright
 
 echo "Get cuda"
 zypper addrepo -p 100 http://developer.download.nvidia.com/compute/cuda/repos/opensuse15/x86_64/cuda-opensuse15.repo
-zypper ref
+zypper ref --gpg-auto-import-keys --non-interactive
 zypper in -y cuda cuda-toolkit
 
 echo "Set up rust toolchain"

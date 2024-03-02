@@ -19,3 +19,7 @@ python312-pyflakes
 rustup
 cmake
 bison
+nodejs
+npm
+libcurl-devel
+curl
