@@ -12,8 +12,8 @@ RUN zypper dup -y && \
     grep -v '^#' /extra-patterns | xargs zypper in -y -t pattern
 RUN rm /extra-packages /extra-patterns
 
-COPY setup.sh /
-RUN sh setup.sh
-RUN rm setup.sh
+COPY init.sh /
+RUN sh /init.sh
+RUN rm /init.sh
 
 SHELL ["/usr/bin/fish", "-c"]
