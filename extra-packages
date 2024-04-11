@@ -27,7 +27,7 @@ git
 vim
 htop
 fish
-nu
+nushell
 emacs
 ripgrep
 fd
