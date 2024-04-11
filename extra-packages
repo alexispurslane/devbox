@@ -17,8 +17,6 @@ SDL2_Pango-devel
 SDL2_sound-devel
 SDL2_ttf-devel
 jq
-bat
-lsd
 editorconfig
 shfmt
 ShellCheck
@@ -26,8 +24,8 @@ clang
 git
 vim
 htop
-fish
 nushell
+carapace-bin
 emacs
 ripgrep
 fd

@@ -5,7 +5,9 @@ LABEL com.github.containers.toolbox="true" \
       summary="Alexis' Tumbleweed development environment" \
       maintainer="alexispurslane@pm.me"
 
-RUN zypper --non-interactive --gpg-auto-import-keys addrepo https://download.opensuse.org/repositories/shells/openSUSE_Tumbleweed/shells.repo
+RUN zypper --non-interactive --quiet addrepo https://download.opensuse.org/repositories/shells/openSUSE_Tumbleweed/shells.repo
+RUN zypper --non-interactive --quiet addrepo https://yum.fury.io/rsteube/fury.repo 
+RUN zypper --gpg-auto-import-keys refresh
 COPY extra-packages /
 COPY extra-patterns /
 RUN zypper dup -y && \
