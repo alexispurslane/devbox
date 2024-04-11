@@ -25,7 +25,8 @@ git
 vim
 htop
 nushell
-carapace-bin
+# For the completions!
+fish
 emacs
 ripgrep
 fd
