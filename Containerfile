@@ -5,6 +5,7 @@ LABEL com.github.containers.toolbox="true" \
       summary="Alexis' Tumbleweed development environment" \
       maintainer="alexispurslane@pm.me"
 
+RUN zypper addrepo https://download.opensuse.org/repositories/shells/openSUSE_Tumbleweed/shells.repo
 COPY extra-packages /
 COPY extra-patterns /
 RUN zypper dup -y && \
