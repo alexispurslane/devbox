@@ -2,19 +2,10 @@
 qt6-qtbase
 qt6-qtbase-devel
 qt6-qtbase-gui
-# audio dev files
-libsndfile-devel
-fluidsynth-devel
-libvorbis-devel
-mpg123-devel
-jbig2dec-devel
 # SDL 2 dev files
 SDL2-devel
 SDL2_image-devel
 SDL2_mixer-devel
-SDL2_net-devel
-SDL2_Pango-devel
-SDL2_sound-devel
 SDL2_ttf-devel
 # misc tools for DOOM Emacs
 jq
@@ -24,7 +15,6 @@ ShellCheck
 # C Dev
 clang
 clang-analyzer
-bison
 git
 htop
 fd-find
