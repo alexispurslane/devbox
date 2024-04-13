@@ -7,6 +7,6 @@ cd ~/frobtads
 mkdir build
 cd build
 cmake ..
-cmake -DCMAKE_RULE_MESSAGES=OFF --build . --target install
+cmake -build . --target install
 cd ../..
 rm -rf frobtads
