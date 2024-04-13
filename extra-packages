@@ -45,11 +45,6 @@ nu
 # Editors
 emacs
 vim
-# OCaml
-opam
-ocaml
-ocaml-runtime
-ocaml-dune
 # Rust
 rustup
 # Node
