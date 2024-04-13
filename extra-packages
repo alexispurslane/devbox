@@ -37,6 +37,7 @@ rustup
 nodejs
 npm
 # Misc
+wget
 pip
 libcurl-devel
 curl
