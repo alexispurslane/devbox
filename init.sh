@@ -1,6 +1,6 @@
 set -oue xtrace pipefail
 
-pip install tensorflow[and-cuda] spacy[cuda12x] pyright black pyflakes
+pip install tensorflow[and-cuda] spacy[cuda12x] pyright
 
 env RUSTUP_HOME=/usr/share/rustup CARGO_HOME=/usr/share/cargo rustup-init --default-toolchain stable --profile default --no-modify-path -y -c rust-analyzer
 

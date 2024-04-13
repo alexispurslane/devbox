@@ -1,10 +1,5 @@
-# QT 6 dev files
-qt6-qtbase
-qt6-qtbase-devel
-qt6-qtbase-gui
 # SDL 2 dev files
 SDL2-devel
-SDL2_image-devel
 SDL2_mixer-devel
 SDL2_ttf-devel
 # misc tools for DOOM Emacs
@@ -13,9 +8,33 @@ editorconfig
 shfmt
 ShellCheck
 # C Dev
+autoconf
+automake
+binutils
+bison
+flex
+gcc
+gcc-c++
+gdb
+glibc-devel
+libtool
+make
+pkgconf
+strace
+byacc
+ccache
+cscope
+ctags
+elfutils
+indent
+ltrace
+perf
+valgrind
+splint
 clang
-clang-analyzer
 git
+lldb
+git-lfs
 htop
 fd-find
 ripgrep
@@ -39,8 +58,8 @@ npm
 # Misc
 wget
 pip
-libcurl-devel
 curl
 stow
 glslang-devel
 sbcl
+renderdoc

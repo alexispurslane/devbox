@@ -6,11 +6,9 @@ LABEL com.github.containers.toolbox="true" \
       maintainer="alexispurslane@pm.me"
 
 COPY extra-packages /
-COPY extra-groups /
 RUN dnf upgrade -y && \
-    grep -v '^#' /extra-groups | xargs dnf group install -y && \
     grep -v '^#' /extra-packages | xargs dnf install -y 
-RUN rm /extra-packages /extra-groups
+RUN rm /extra-packages
 
 COPY init.sh /
 RUN sh /init.sh
