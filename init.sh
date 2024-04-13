@@ -2,7 +2,7 @@ set -oue xtrace pipefail
 
 npm install -g prettier eslint stylelint xmllint js-beautify
 
-pip install tensorflow[and-cuda] spacy[cuda12x] pyright
+pip install tensorflow[and-cuda] spacy[cuda12x] pyright pyflakes black
 
 env RUSTUP_HOME=/usr/share/rustup CARGO_HOME=/usr/share/cargo rustup-init --default-toolchain stable --profile default --no-modify-path -y -c rust-analyzer
 
