@@ -1,15 +1,7 @@
-set -o xtrace
+set -oue xtrace pipefail
 
-pip install --break-system-packages tensorflow[and-cuda] spacy[cuda-12x] pyright
+pip install tensorflow[and-cuda] spacy[cuda-12x] pyright black pyflakes
 python3 -m spacy download en_core_web_trf
-
-rustup toolchain install stable
-rustup component add rust-analyzer
-
-opam init
-opam install ocamlbuild ocaml-lsp-server odoc merlin ocamlformat utop 
-
-npm install -g prettier eslint stylelint xmllint js-beautify
 
 git clone https://github.com/realnc/frobtads.git ~/frobtads
 cd ~/frobtads

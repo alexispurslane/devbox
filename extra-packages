@@ -1,49 +1,61 @@
-qt6-core-devel
-qt6-gui-devel
-qt6-network-devel
-qt6-svg-devel
-qt6-widgets-devel
+# QT 6 dev files
+qt6-qtbase
+qt6-qtbase-devel
+qt6-qtbase-gui
+# GTK dev files
+gtk4-devel
+gtk4-devel-tools
+gtk4-devel-docs
+# audio dev files
 libsndfile-devel
-libfluidsynth3
-libvorbisfile3
-libmpg123-0
-libjbig-devel
+fluidsynth-devel
+libvorbis-devel
+mpg123-devel
+jbig2dec-devel
+# SDL 2 dev files
 SDL2-devel
-SDL2-devel-32bit
 SDL2_image-devel
 SDL2_mixer-devel
 SDL2_net-devel
 SDL2_Pango-devel
 SDL2_sound-devel
 SDL2_ttf-devel
+# misc tools for DOOM Emacs
 jq
 editorconfig
 shfmt
 ShellCheck
+# C Dev
 clang
+clang-analyzer
+clang-tools-extra
+bison
 git
-vim
 htop
-nushell
-# For the completions!
-fish
-emacs
+fd-find
 ripgrep
-fd
-cnf
-sbcl
 pandoc
+# Shell
+fish
+nu
+# Editors
+emacs
+vim
+# OCaml
 opam
 ocaml
 ocaml-runtime
 ocaml-dune
-python311-black
-python311-pyflakes
+# Rust
 rustup
-bison
+# Node
 nodejs
 npm
+# Misc
+pip
 libcurl-devel
 curl
 stow
 glslang-devel
+sbcl
+net-tools

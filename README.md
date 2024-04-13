@@ -2,7 +2,7 @@
 
 ## Description
 
-An openSUSE Tumbleweed-based development container for Alexis. Nothing too special, just all the things I need for all my projects. Based on ublue-os/boxkit.
+An Fedora Rawhide-based development container for Alexis. Nothing too special, just all the things I need for all my projects. Based on ublue-os/boxkit.
 
 ## How to use
 
