@@ -2,10 +2,6 @@
 qt6-qtbase
 qt6-qtbase-devel
 qt6-qtbase-gui
-# GTK dev files
-gtk4-devel
-gtk4-devel-tools
-gtk4-devel-docs
 # audio dev files
 libsndfile-devel
 fluidsynth-devel
@@ -28,7 +24,6 @@ ShellCheck
 # C Dev
 clang
 clang-analyzer
-clang-tools-extra
 bison
 git
 htop
@@ -58,4 +53,3 @@ curl
 stow
 glslang-devel
 sbcl
-net-tools
