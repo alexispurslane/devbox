@@ -39,6 +39,7 @@ htop
 fd-find
 ripgrep
 pandoc
+cmake
 # Shell
 fish
 nu
@@ -56,5 +57,7 @@ pip
 curl
 stow
 glslang-devel
+libcurl-devel
+ncurses-devel
 sbcl
 renderdoc
