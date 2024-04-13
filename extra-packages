@@ -1,5 +1,10 @@
+# GUI toolkits
+qt6-qtbase
+qt6-qtbase-devel
+gtk4-devel
 # SDL 2 dev files
 SDL2-devel
+SDL2_image-devel
 SDL2_mixer-devel
 SDL2_ttf-devel
 # misc tools for DOOM Emacs
