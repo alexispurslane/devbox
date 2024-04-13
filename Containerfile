@@ -9,6 +9,7 @@ COPY extra-packages /
 RUN dnf upgrade -y && \
     grep -v '^#' /extra-packages | xargs dnf install -y 
 RUN rm /extra-packages
+RUN dnf clean all
 
 COPY init.sh /
 RUN sh /init.sh
