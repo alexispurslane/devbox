@@ -14,3 +14,5 @@ cmake ..
 cmake --build . --target install
 cd ../..
 rm -rf frobtads
+
+gem install bundler jekyll
