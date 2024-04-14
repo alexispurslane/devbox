@@ -66,3 +66,13 @@ libcurl-devel
 ncurses-devel
 sbcl
 renderdoc
+# Ruby for Jekyll
+redhat-rpm-config
+ruby
+gem
+ruby-devel
+crypto-devel
+openssl-devel
+pkg-config
+openssl
+
