@@ -14,10 +14,3 @@ cd ../..
 rm -rf frobtads
 
 gem install bundler jekyll
-
-git clone https://github.com/casouri/tree-sitter-module
-cd tree-sitter-module
-./batch.sh
-cp dist/* /usr/local/lib/
-cd ..
-rm -rf tree-sitter-module
