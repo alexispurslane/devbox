@@ -49,7 +49,6 @@ cmake
 fish
 nu
 # Editors
-emacs
 vim
 # Rust
 rustup
