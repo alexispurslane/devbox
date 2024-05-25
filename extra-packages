@@ -38,6 +38,7 @@ valgrind
 splint
 clang
 git
+emacs
 lldb
 git-lfs
 htop
