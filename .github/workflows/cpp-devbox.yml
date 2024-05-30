@@ -7,7 +7,7 @@ on:
     - cron: '0 0 * * TUE'
   push:
     branches:
-      - main
+      - split
     paths-ignore:
       - '**/README.md'
       - '*.cpp'
