@@ -9,3 +9,4 @@ ncurses-devel
 renderdoc
 openssl-devel
 pkg-config
+gtk4-devel

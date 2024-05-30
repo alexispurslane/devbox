@@ -14,6 +14,6 @@ RUN dnf upgrade -y
 RUN dnf group install -y "C Development Tools and Libraries" "Development Tools"
 
 COPY extra-packages.rust /
-RUN grep -v '^#' /extra-packages | xargs dnf install -y
+RUN grep -v '^#' /extra-packages.rust | xargs dnf install -y
 RUN rm /extra-packages.rust
 RUN dnf clean all
