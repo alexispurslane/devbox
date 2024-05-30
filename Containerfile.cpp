@@ -6,7 +6,7 @@ LABEL com.github.containers.toolbox="true" \
       maintainer="alexispurslane@pm.me"
 
 RUN dnf upgrade -y
-RUN dnf group install -y "C Development Tools and Libraries" "Development Tools"
+RUN dnf group install -y c-development development-tools
 
 COPY extra-packages.cpp /
 RUN grep -v '^#' /extra-packages.cpp | xargs dnf install -y
